@@ -56,7 +56,7 @@ export default function BooksSection() {
 
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed transition-colors duration-300">
               I'm currently curating my book collection and reading recommendations. This section will feature books
-              that have influenced my career in software testing and development.
+              that have influenced me professionally and personally.
             </p>
 
             <div className="bg-gray-50/80 dark:bg-slate-700/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200/50 dark:border-slate-600/30 transition-all duration-300">
@@ -74,7 +74,7 @@ export default function BooksSection() {
                 </div>
                 <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300 transition-colors duration-300">
                   <ArrowRight size={16} className="text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
-                  <span>Personal development reads</span>
+                  <span>Economics, Philosophy, and History</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300 transition-colors duration-300">
                   <ArrowRight size={16} className="text-emerald-600 dark:text-emerald-400 flex-shrink-0" />

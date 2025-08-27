@@ -33,7 +33,7 @@ export default function ProfileSection() {
                 Francisco Beron
               </h1>
               <p className="text-lg md:text-xl text-white/90 mt-2 max-w-xl transition-colors duration-300 drop-shadow-md">
-                Software Engineer in Test
+                Software Engineer/Programmer
               </p>
 
               {/* Social Links - aligned left */}

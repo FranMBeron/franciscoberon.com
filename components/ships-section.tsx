@@ -37,7 +37,7 @@ export default function ShipsSection() {
                 </h1>
               </div>
               <p className="text-lg md:text-xl text-white/90 max-w-xl transition-colors duration-300 drop-shadow-md">
-                Projects I've built and shipped to production
+                Projects I've built and shipped with whatever purpose.
               </p>
             </div>
           </div>
@@ -67,9 +67,9 @@ export default function ShipsSection() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col items-center p-4 bg-white/50 dark:bg-slate-600/30 rounded-xl transition-all duration-300">
                   <Code size={32} className="text-indigo-600 dark:text-indigo-400 mb-3" />
-                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Testing Frameworks</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Advanced Programming/Leetcode</h4>
                   <p className="text-sm text-gray-600 dark:text-gray-300 text-center">
-                    Automated testing solutions and CI/CD integrations
+                    Advanced programming and leetcode solutions
                   </p>
                 </div>
 
@@ -90,10 +90,6 @@ export default function ShipsSection() {
                 <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300 transition-colors duration-300">
                   <ArrowRight size={16} className="text-indigo-600 dark:text-indigo-400 flex-shrink-0" />
                   <span>Live demos and GitHub repositories</span>
-                </div>
-                <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300 transition-colors duration-300">
-                  <ArrowRight size={16} className="text-indigo-600 dark:text-indigo-400 flex-shrink-0" />
-                  <span>Impact metrics and user feedback</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300 transition-colors duration-300">
                   <ArrowRight size={16} className="text-indigo-600 dark:text-indigo-400 flex-shrink-0" />

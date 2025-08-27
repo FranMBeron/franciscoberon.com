@@ -47,7 +47,7 @@ export default function GlowMenu({ activeSection, onSectionChange }: GlowMenuPro
 
   const menuItems = [
     { id: "profile", label: "Profile", icon: User },
-    { id: "experience", label: "Experience", icon: Briefcase },
+    { id: "experience", label: "Work", icon: Briefcase },
     { id: "books", label: "Books List", icon: BookOpen },
     { id: "ships", label: "Ship's", icon: Ship },
   ]
