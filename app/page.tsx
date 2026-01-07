@@ -121,9 +121,6 @@ export default function Home() {
             )}
           </div>
 
-          <Link href="/login" className="text-sm text-primary hover:text-primary/90 font-medium">
-            Admin Login
-          </Link>
         </div>
 
         {/* Blog Posts as a vertical list */}
