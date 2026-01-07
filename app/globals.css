@@ -54,118 +54,36 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground transition-colors duration-500;
+    @apply bg-background text-foreground;
   }
 }
 
-/* Custom inner shadow for banner border darkening */
-@layer utilities {
-  .shadow-inner-strong {
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(0, 0, 0, 0.15), inset 0 0 40px
-      rgba(0, 0, 0, 0.1), inset 0 0 60px rgba(0, 0, 0, 0.05);
-  }
-
-  .shadow-inner-strong:hover {
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 25px rgba(0, 0, 0, 0.2), inset 0 0 50px
-      rgba(0, 0, 0, 0.15), inset 0 0 80px rgba(0, 0, 0, 0.08);
-  }
+/* Custom styles for blog content */
+.prose h2 {
+  color: #111827; /* text-gray-900 */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
+.prose p {
+  color: #374151; /* text-gray-700 */
+  margin-bottom: 1.5rem;
 }
 
-::-webkit-scrollbar-track {
-  @apply bg-gray-50 dark:bg-gray-800 transition-colors duration-300;
+.prose ul,
+.prose ol {
+  color: #374151; /* text-gray-700 */
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-::-webkit-scrollbar-thumb {
-  @apply bg-gradient-to-b from-blue-400 to-purple-500 dark:from-gray-600 dark:to-gray-700 rounded-full transition-colors duration-300;
+.prose li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  @apply from-blue-500 to-purple-600 dark:from-gray-500 dark:to-gray-600;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Prevent flash of unstyled content */
-html[style*="color-scheme: dark"] {
-  color-scheme: dark;
-}
-
-html[style*="color-scheme: light"] {
-  color-scheme: light;
-}
-
-/* Custom animations */
-@keyframes glow {
-  0%,
-  100% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-.animate-glow {
-  animation: glow 2s ease-in-out infinite;
-}
-
-/* Theme transition optimization */
-* {
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
-}
-
-/* Light mode specific styles */
-@media (prefers-color-scheme: light) {
-  :root {
-    color-scheme: light;
-  }
-}
-
-/* Dark mode specific styles */
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-  }
-}
-
-/* Reduce motion for users who prefer it */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
-/* Enhanced light mode brightness */
-.light-mode-enhanced {
-  filter: brightness(1.1) contrast(1.05);
-}
-
-/* Smooth theme transitions */
-html {
-  transition: color-scheme 0.3s ease;
-}
-
-body {
-  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Text shadow utilities for better readability */
-.drop-shadow-lg {
-  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
-}
-
-.drop-shadow-md {
-  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+.prose strong {
+  color: #111827; /* text-gray-900 */
+  font-weight: 600;
 }

@@ -18,7 +18,7 @@ export default function SocialLinks({
   return (
     <div className={`flex items-center ${containerClass}`}>
       <Link
-        href="https://github.com"
+        href="https://github.com/FranMBeron"
         target="_blank"
         rel="noopener noreferrer"
         className={`${textColor} ${hoverColor} transition-colors`}
@@ -27,16 +27,16 @@ export default function SocialLinks({
         <span className="sr-only">GitHub</span>
       </Link>
       <Link
-        href="https://twitter.com"
+        href="https://x.com/BFranROCK"
         target="_blank"
         rel="noopener noreferrer"
         className={`${textColor} ${hoverColor} transition-colors`}
       >
         <Twitter size={iconSize} />
-        <span className="sr-only">Twitter</span>
+        <span className="sr-only">X (Twitter)</span>
       </Link>
       <Link
-        href="https://linkedin.com"
+        href="https://www.linkedin.com/in/francisco-mateo-beron/"
         target="_blank"
         rel="noopener noreferrer"
         className={`${textColor} ${hoverColor} transition-colors`}
