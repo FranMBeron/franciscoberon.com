@@ -98,10 +98,7 @@ export default function LoginPage() {
         <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
           Admin Login
         </h2>
-        <p className="mt-2 text-center text-sm text-gray-600">
-          Sign in to manage your blog
-        </p>
-        <div className="mt-2 flex items-center justify-center gap-2 text-sm">
+        <div className="mt-4 flex items-center justify-center gap-2 text-sm">
           {authMethod === "github" ? (
             <span className="flex items-center gap-1 text-green-600">
               <Wifi className="h-4 w-4" />
