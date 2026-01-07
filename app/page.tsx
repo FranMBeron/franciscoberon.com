@@ -46,30 +46,32 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 md:px-8">
-        {/* Hero Banner with Buenos Aires cityscape */}
+        {/* Hero Section */}
         <section className="w-full mt-12 mb-8">
-          <div className="w-full h-[250px] md:h-[300px] relative overflow-hidden rounded-2xl">
-            {/* Buenos Aires cityscape background */}
-            <div className="absolute inset-0 bg-gray-900">
-              <Image
-                src="/banner-image.png"
-                alt="City skyline at night"
-                fill
-                priority
-                className="object-cover opacity-80"
-              />
-              {/* Overlay gradient for better text readability */}
-              <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"></div>
-            </div>
+          <div className="w-full h-[250px] md:h-[300px] relative overflow-hidden rounded-2xl bg-gray-100">
+            <div className="h-full flex flex-col md:flex-row">
+              {/* Left side - Profile photo */}
+              <div className="hidden md:flex items-center justify-center md:w-[300px] lg:w-[350px] p-4">
+                <div className="relative w-48 h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                  <Image
+                    src="/profile.jpeg"
+                    alt="Francisco Beron"
+                    fill
+                    priority
+                    className="object-cover"
+                  />
+                </div>
+              </div>
 
-            {/* Content container */}
-            <div className="relative z-10 h-full flex flex-col justify-center px-8 md:px-16">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">Francisco Beron</h1>
-              <p className="text-lg md:text-xl text-gray-300 mt-2 max-w-xl">A bunch of scattered and optimistic thoughts</p>
+              {/* Right side - Text content */}
+              <div className="flex-1 flex flex-col justify-center items-end text-right px-8 md:px-12 py-6 md:py-0">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">Francisco Beron</h1>
+                <p className="text-lg md:text-xl text-gray-600 mt-2 max-w-xl">A bunch of scattered and optimistic thoughts</p>
 
-              {/* Social Links - aligned left */}
-              <div className="mt-6 flex justify-start">
-                <SocialLinks textColor="text-white" hoverColor="hover:text-gray-300" />
+                {/* Social Links */}
+                <div className="mt-6 flex justify-end">
+                  <SocialLinks textColor="text-gray-600" hoverColor="hover:text-gray-900" />
+                </div>
               </div>
             </div>
           </div>
