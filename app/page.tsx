@@ -47,11 +47,12 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-white">
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 md:px-8">
         {/* Hero Section */}
-        <section className="w-full mt-12 mb-8">
-          <div className="w-full h-[250px] md:h-[300px] relative overflow-hidden rounded-2xl bg-gray-100">
-            <div className="h-full flex flex-col md:flex-row">
+        <section className="w-full mt-8 md:mt-12 mb-8">
+          {/* Desktop: with gray background layout */}
+          <div className="hidden md:block w-full h-[300px] relative overflow-hidden rounded-2xl bg-gray-100">
+            <div className="h-full flex flex-row">
               {/* Left side - Profile photo */}
-              <div className="hidden md:flex items-center justify-center md:w-[300px] lg:w-[350px] p-4">
+              <div className="flex items-center justify-center p-4 w-[300px] lg:w-[350px]">
                 <div className="relative w-48 h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden border-4 border-white shadow-lg">
                   <Image
                     src="/profile.jpeg"
@@ -64,15 +65,33 @@ export default function Home() {
               </div>
 
               {/* Right side - Text content */}
-              <div className="flex-1 flex flex-col justify-center items-end text-right px-8 md:px-12 py-6 md:py-0">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">Francisco Beron</h1>
-                <p className="text-lg md:text-xl text-gray-600 mt-2 max-w-xl">A bunch of scattered and optimistic thoughts</p>
+              <div className="flex-1 flex flex-col justify-center items-end text-right px-12">
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">Francisco Beron</h1>
+                <p className="text-xl text-gray-600 mt-2 max-w-xl">A bunch of scattered and optimistic thoughts</p>
 
                 {/* Social Links */}
                 <div className="mt-6 flex justify-end">
                   <SocialLinks textColor="text-gray-600" hoverColor="hover:text-gray-900" />
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Mobile: no background, centered content */}
+          <div className="md:hidden flex flex-col items-center text-center">
+            <div className="relative w-28 h-28 rounded-full overflow-hidden border-4 border-gray-100 shadow-lg">
+              <Image
+                src="/profile.jpeg"
+                alt="Francisco Beron"
+                fill
+                priority
+                className="object-cover"
+              />
+            </div>
+            <h1 className="text-2xl font-bold text-gray-900 mt-4">Francisco Beron</h1>
+            <p className="text-base text-gray-600 mt-1 px-4">A bunch of scattered and optimistic thoughts</p>
+            <div className="mt-4">
+              <SocialLinks textColor="text-gray-600" hoverColor="hover:text-gray-900" />
             </div>
           </div>
         </section>
